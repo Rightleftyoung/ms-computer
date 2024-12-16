@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minesweeper 20x20</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Style for the divider */
+        .divider {
+            height: 1px;
+            background-color: black;
+            border: none;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="controls">
+            <button id="toggle-double-click">Disable Double Click</button>
+            <button id="new-game">New Game</button>
+            <button id="hint">Hint (3)</button>
+            <div id="info">
+                <span id="mine-count">Mines: 60</span>
+                <span id="flag-count">Flags: 60</span>
+            </div>
+            <div id="store">
+                <div id="total-points">Total Points: 0</div>
+                <button id="buy-extra-flag">Buy Extra Flag (200 pts)</button>
+                <button id="buy-reveal-mine">Reveal Mine (500 pts)</button>
+                <button id="undo-mine">Undo Mine (1)</button>
+            </div>
+        </div>
+        <div id="grid"></div>
+        <div id="timer">Time: 0s</div>
+        <div id="points">Points: 0</div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
